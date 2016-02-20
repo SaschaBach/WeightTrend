@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_background">#3B1934</color>
+    <color name="orange_background">#FC7508</color>
+    <color name="white_transparent">#50FFFFFF</color>
+    <color name="text_view">#E6FFFFFF</color>
+    <color name="transparent">#00000000 </color>
+    <color name="help_background">#80CCCCCC</color>
+
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/purple_background"
+        >
+
+    <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp">
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:orientation="horizontal">
+
+            <LinearLayout android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_marginLeft="10dp"
+                          android:text="Ø"/>
+
+                <TextView android:id="@+id/averageWeightTrendTextView"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:text="2.5"/>
+
+                <TextView android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:text="kg"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content"
+                            android:layout_width="wrap_content">
+
+                <TextView android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:text="Δ"/>
+
+                <TextView android:id="@+id/lastWeightTrendTextView"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:text="2.5"/>
+
+                <TextView android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:text="kg"
+                          android:layout_marginRight="10dp"
+                        />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:orientation="horizontal">
+
+            <RelativeLayout android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1">
+
+                <ImageButton android:id="@+id/helpImageButton"
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:src="@drawable/help_icon"
+                             android:layout_marginBottom="11dp"
+                             android:layout_marginLeft="0dp"
+                             android:layout_centerInParent="true"
+                             style="@style/DefaultButton"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginBottom="10dp">
+
+        <RelativeLayout android:id="@+id/weightLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        style="@style/Actionbar"
+                        android:layout_marginBottom="15dp">
+
+            <LinearLayout android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_centerInParent="true" >
+
+                <TextView android:id="@+id/weightTextView"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:text="100"
+                          android:textSize="90dp"
+                          style="@style/DefaultText"
+                          android:layout_marginRight="8dp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                    <ImageView android:id="@+id/weightTrendImageView"
+                              android:layout_height="wrap_content"
+                              android:layout_width="wrap_content"
+                              android:src="@drawable/arrow_down_orange_icon"
+                              android:layout_marginBottom="11dp"
+                              android:layout_marginLeft="0dp"/>
+
+                    <TextView android:layout_height="wrap_content"
+                              android:layout_width="wrap_content"
+                              android:text="kg"
+                              android:textSize="30dp"
+                              style="@style/DefaultText"
+                              android:layout_marginLeft="0dp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                                      android:layout_width="fill_parent"
+                                      android:orientation="horizontal">
+
+            <RelativeLayout android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1">
+
+                <LinearLayout android:id="@+id/processWeightChooserLinearLayout"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_centerInParent="true"
+                              android:layout_centerHorizontal="true">
+
+                    <ImageButton android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:src="@drawable/weight_chooser_icon"
+                                 style="@style/DefaultButton"/>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent">
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_centerInParent="true"
+                                  android:text=" neues Gewicht" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+                <TextView android:layout_width="1dp"
+                          android:layout_height="15dp"
+                          android:background="@android:color/white"
+                          android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1" android:longClickable="true">
+
+                <LinearLayout android:id="@+id/processTrendLinearLayout"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_centerInParent="true"
+                              android:layout_centerHorizontal="true">
+
+                    <ImageButton android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:layout_centerInParent="true"
+                                 android:src="@drawable/trend_icon"
+                                 style="@style/DefaultButton"/>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent">
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_centerInParent="true"
+                                  android:text=" neuer Trend"/>
+
+                    </RelativeLayout>
+
+
+                 </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <ListView android:id="@+id/trendListView"
+              android:paddingTop="0.5dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:divider="@color/purple_background"
+              android:dividerHeight="0.5dp"
+              android:background="@drawable/list_background"
+              android:listSelector="@color/purple_background"/>
+
+</LinearLayout>
+

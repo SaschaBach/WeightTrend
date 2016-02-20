@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent">
+
+    <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp">
+
+            <ImageView android:id="@+id/trendImageView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="fill_parent"
+                       android:src="@drawable/arrow_down_active_icon"
+                       android:layout_marginRight="20dp"/>
+
+            <LinearLayout android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:orientation="vertical">
+
+                <TextView android:id="@+id/dateTextView"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_centerInParent="true"
+                          android:layout_centerHorizontal="true"
+                          android:text="text"
+                          android:textSize="12dp"
+                          style="@style/DefaultText"
+                          android:layout_marginTop="0dp"
+                          android:layout_marginBottom="0dp"
+                          android:layout_marginLeft="0dp"
+                          android:layout_marginRight="0dp"/>
+
+                <TextView android:id="@+id/textTextView"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_centerInParent="true"
+                          android:layout_centerHorizontal="true"
+                          android:text="detail text"
+                          android:textSize="20dp"
+                          style="@style/DefaultText"
+                          android:layout_marginBottom="2dp"
+                          android:layout_marginLeft="0dp"
+                          android:layout_marginRight="0dp"/>
+
+                <LinearLayout android:id="@+id/facebookIconLayout"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="0dp"
+                              android:layout_marginRight="0dp"
+                              android:visibility="visible">
+
+                    <ImageView android:id="@+id/facebookIconImageView"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/facebook_small_icon_active"/>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent">
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_centerInParent="true">
+
+                            <TextView android:id="@+id/commentCountTextView"
+                                      android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:layout_centerHorizontal="true"
+                                      android:text="0"
+                                      android:layout_marginRight="0dp"
+                                      android:layout_marginLeft="10dp"
+                                      android:textSize="10dp"
+                                      style="@style/DefaultText"
+                                      android:layout_marginBottom="0dp"
+                                      android:layout_marginTop="0dp"/>
+
+                            <TextView android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:layout_centerHorizontal="true"
+                                      android:text=" Kommentar(e) | "
+                                      android:textSize="10dp"
+                                      android:layout_marginRight="0dp"
+                                      android:layout_marginLeft="0dp"
+                                      android:layout_marginBottom="0dp"
+                                      android:layout_marginTop="0dp"
+                                      style="@style/DefaultText"/>
+
+                            <TextView android:id="@+id/likesCountTextView"
+                                      android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:layout_centerHorizontal="true"
+                                      android:text="0"
+                                      android:textSize="10dp"
+                                      android:layout_marginRight="0dp"
+                                      android:layout_marginLeft="0dp"
+                                      android:layout_marginBottom="0dp"
+                                      android:layout_marginTop="0dp"
+                                      style="@style/DefaultText"/>
+
+                            <TextView android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:layout_centerHorizontal="true"
+                                      android:text=" Like(s)"
+                                      android:textSize="10dp"
+                                      android:layout_marginRight="0dp"
+                                      android:layout_marginLeft="0dp"
+                                      android:layout_marginBottom="0dp"
+                                      android:layout_marginTop="0dp"
+                                      style="@style/DefaultText"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

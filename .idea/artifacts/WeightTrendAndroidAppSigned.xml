@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="apk" build-on-make="true" name="WeightTrendAndroidAppSigned">
+    <output-path>$PROJECT_DIR$/out/artifacts/WeightTrendAndroidAppSigned</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyAlias" value="Weight-Trend" />
+        <option name="keyPassword" value="V2VpZ2h0LVRyZW5k" />
+        <option name="keyStorePassword" value="aXNla2k1MjY=" />
+        <option name="keyStoreUrl" value="file://$PROJECT_DIR$/Codebase/WeightTrendAndroidApp/sascha.keystore" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="WeightTrendAndroidAppSigned.apk">
+      <element id="android-final-package" facet="WeightTrendAndroidApp/android/Android" />
+    </root>
+  </artifact>
+</component>

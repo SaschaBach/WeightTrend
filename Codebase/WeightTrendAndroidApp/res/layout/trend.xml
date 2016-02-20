@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/trendMainLayout"
+                android:background="@color/purple_background">
+
+    <LinearLayout android:id="@+id/upLayout"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+        <RelativeLayout android:id="@+id/actionBar"
+                        android:layout_height="50dp"
+                        android:layout_width="fill_parent"
+                        style="@style/Actionbar"
+                        android:background="@drawable/actionbar_background_purple">
+
+            <Button android:id="@+id/backButton"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="zurück"
+                    android:textColor="@drawable/actionbar_text_color_white"
+                    android:textSize="15dp"
+                    style="@style/DefaultButton"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            <TextView android:id="@+id/headerTextView"
+                      android:layout_height="fill_parent"
+                      android:layout_width="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:textSize="20dp"
+                      android:text="Trend"
+                      style="@style/DefaultText"/>
+
+            <Button android:id="@+id/saveButton"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="speichern"
+                    android:textColor="@drawable/actionbar_text_color_white"
+                    android:textSize="15dp"
+                    style="@style/DefaultButton"
+                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+            <LinearLayout android:id="@+id/trendLinearLayout"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerHorizontal="true"
+                          android:layout_marginTop="20dp">
+
+                <ImageButton android:id="@+id/trendUpImageButton"
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_weight="1"
+                             style="@style/DefaultButton"
+                             android:src="@drawable/trend_up_button"/>
+
+                <ImageButton android:id="@+id/trendDownImageButton"
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_weight="1"
+                             style="@style/DefaultButton"
+                             android:src="@drawable/trend_down_button"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_marginTop="15dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerHorizontal="true">
+
+                <TextView android:id="@+id/textTextView"
+                          android:visibility="gone"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="45dp"
+                          android:text=" +9 kg"
+                          android:layout_marginBottom="0dp"
+                          android:layout_marginTop="0dp"
+                          style="@style/DefaultText"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:orientation="vertical"
+                      android:layout_alignParentLeft="true"
+                      android:background="@android:color/white"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="20dp">
+
+            <Button android:id="@+id/datetimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultButton"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:text="Dienstag, 15.02.2014"/>
+
+        </LinearLayout>
+
+
+        <EditText android:id="@+id/detailEditText"
+                  android:layout_width="fill_parent"
+                  android:layout_height="100dp"
+                  android:focusableInTouchMode="true"
+                  android:focusable="true"
+                  style="@style/DefaultText"
+                  android:background="@android:color/white"
+                  android:textColor="@android:color/black"
+                  android:inputType="textMultiLine"
+                  android:gravity="top|left"
+                  android:maxLength="100"
+                  android:textSize="20dp"
+                  android:layout_marginTop="20dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp">
+
+            <requestFocus />
+
+        </EditText>
+
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/upLayout">
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_alignParentLeft="true">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <com.facebook.widget.LoginButton
+                        android:id="@+id/facebookLoginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/DefaultButton"
+                        android:background="@drawable/facebook_button_disable"
+                        />
+
+            </LinearLayout>
+
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          style="@style/DefaultText"
+                          android:textSize="15dp"
+                          android:text="Auf Facebook teilen?"
+                          android:layout_centerInParent="true"
+                          android:layout_alignParentLeft="true"
+                          android:textColor="@color/white_transparent"
+                          android:layout_marginLeft="10dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

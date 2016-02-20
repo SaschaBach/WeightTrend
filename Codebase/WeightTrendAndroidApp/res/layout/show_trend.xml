@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/showTrendMainLayout"
+                android:background="@color/purple_background">
+
+    <LinearLayout android:id="@+id/upLayout"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+
+        <RelativeLayout android:id="@+id/actionBar"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        style="@style/Actionbar"
+                        android:background="@drawable/actionbar_background_purple">
+
+            <TextView android:id="@+id/headerTextView"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:textSize="20dp"
+                      android:text="Trend"
+                      style="@style/DefaultText"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="fill_parent"
+                       android:layout_height="wrap_content">
+
+           <LinearLayout android:id="@+id/trendLinearLayout"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerHorizontal="true"
+                         android:layout_marginTop="20dp">
+
+               <ImageView android:id="@+id/trendImageView"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_weight="1"
+                          style="@style/DefaultButton"
+                          android:src="@drawable/arrow_down_active_icon"/>
+
+           </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerHorizontal="true">
+
+                <TextView android:id="@+id/textTextView"
+                          android:visibility="gone"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="45dp"
+                          android:layout_marginBottom="0dp"
+                          android:layout_marginTop="0dp"
+                          style="@style/DefaultText"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="fill_parent"
+                      android:orientation="vertical"
+                      android:layout_alignParentLeft="true"
+                      android:background="@color/white_transparent"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginTop="20dp">
+
+            <TextView android:id="@+id/datetimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DefaultButton"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:text="Dienstag, 15.02.2014"/>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/detailText"
+                  android:layout_width="fill_parent"
+                  android:layout_height="100dp"
+                  style="@style/DefaultText"
+                  android:background="@color/white_transparent"
+                  android:textColor="@android:color/black"
+                  android:textSize="20dp"
+                  android:layout_marginTop="20dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp">
+
+        </TextView>
+
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_alignParentLeft="true"
+                          android:layout_marginTop="20dp">
+
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+
+                    <ImageView android:id="@+id/facebookImageView"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_horizontal"
+                               android:layout_marginTop="0dp"
+                               android:layout_marginLeft="0dp"
+                               android:background="@drawable/facebook_button_disable"/>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent">
+
+                        <LinearLayout android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:layout_centerInParent="true">
+
+                            <TextView android:id="@+id/likesCountTextView"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      style="@style/DefaultText"
+                                      android:textSize="15dp"
+                                      android:text="0"
+                                      android:textColor="@color/white_transparent"
+                                      android:layout_marginTop="0dp"
+                                      android:layout_marginRight="0dp"
+                                      android:layout_marginLeft="10dp"/>
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      style="@style/DefaultText"
+                                      android:textSize="15dp"
+                                      android:text=" like(s): "
+                                      android:textColor="@color/white_transparent"
+                                      android:layout_marginTop="0dp"
+                                      android:layout_marginLeft="0dp"
+                                      android:layout_marginRight="0dp"/>
+
+                            <TextView android:id="@+id/likeNamesTextView"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      style="@style/DefaultText"
+                                      android:textSize="15dp"
+                                      android:textColor="@color/white_transparent"
+                                      android:layout_marginTop="0dp"
+                                      android:layout_marginLeft="0dp"
+                                      android:layout_marginRight="0dp"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+       <ListView android:id="@+id/facebookCommentsListView"
+                 android:paddingTop="0.5dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:divider="@color/white_transparent"
+                 android:dividerHeight="0.5dp"
+                 android:background="@color/purple_background"
+                 android:listSelector="@color/purple_background"
+                 android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
